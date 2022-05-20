@@ -1,20 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<!-- -------Menu------- -->
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header class="header-menu">
+      <img src="./../../assets/icon/favicon2.png" alt="ToDo App" width="45px" height="45px" title="ToDo App">
+      <ion-title>ToDo</ion-title>
+  </ion-header>
+  <ion-content>
+    <ion-list class="listMenu">
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="main"></ion-router-outlet>
+
+
+<!-- --------Toolbar-------- -->
+<ion-header [translucent]="true" class="homeHeader">
+  <ion-toolbar class="toolbar-content" mode="ms">
+    <ion-icon class="menu-grid" name="grid-outline" (click)="openMenu()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<!-- ------------Content------------ -->
+<ion-content [fullscreen]="true" class="homeContent">
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
   </div>
 </ion-content>

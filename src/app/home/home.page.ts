@@ -1,5 +1,5 @@
+import { MenuController, ModalController } from '@ionic/angular';
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(
+    private menu: MenuController
+  ) {}
 
+
+  openMenu() {
+    this.menu.open('first');
+  }
 }

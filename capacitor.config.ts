@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'learning-ionic',
+  appId: 'com.ionic.ToDo',
+  appName: 'ToDo App',
   webDir: 'www',
   bundledWebRuntime: false
 };
